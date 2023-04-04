@@ -10,7 +10,7 @@ app.use("/", userRouter);
 
 app.listen(8000, async () => {
   try {
-    await connection;
+    connection;
     console.log("server connected");
   } catch (err) {
     console.log("connection failed");
