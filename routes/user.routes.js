@@ -43,7 +43,7 @@ userRouter.post("/getprofile", async (req, res) => {
   }
 });
 
-userRouter.get("/calculate", async (req, res) => {
+userRouter.post("/calculate", async (req, res) => {
   try {
     const { amount, rate, years } = req.body;
     if (amount && rate && years) {
