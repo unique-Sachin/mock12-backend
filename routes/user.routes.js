@@ -33,7 +33,7 @@ userRouter.post("/login", async (req, res) => {
   }
 });
 
-userRouter.get("/getprofile", async (req, res) => {
+userRouter.post("/getprofile", async (req, res) => {
   try {
     const { email } = req.body;
     const profile = await userModel.find({ email });
